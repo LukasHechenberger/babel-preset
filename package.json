@@ -1,7 +1,7 @@
 {
   "name": "@ls-age/babel-preset",
   "version": "0.2.0",
-  "description": "ls-age's babel preset",
+  "description": "Babel preset used by ls-age",
   "main": "out",
   "scripts": {
     "compile": "babel -d out src",
