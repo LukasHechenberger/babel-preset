@@ -1,7 +1,7 @@
 {
   "name": "@ls-age/babel-preset",
-  "version": "0.2.0",
-  "description": "ls-age's babel preset",
+  "version": "0.3.0-beta.0",
+  "description": "Babel preset used by ls-age",
   "main": "out",
   "scripts": {
     "compile": "babel -d out src",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LukasHechenberger/babel-preset.git"
+    "url": "git+https://github.com/ls-age/babel-preset.git"
   },
   "author": "Lukas Hechenberger <npm@ls-age.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LukasHechenberger/babel-preset/issues"
+    "url": "https://github.com/ls-age/babel-preset/issues"
   },
-  "homepage": "https://github.com/LukasHechenberger/babel-preset#readme",
+  "homepage": "https://github.com/ls-age/babel-preset#readme",
   "devDependencies": {
     "@commitlint/cli": "^5.0.1",
     "@commitlint/config-angular": "^4.3.0",
