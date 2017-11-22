@@ -1,0 +1,50 @@
+{
+  "name": "@ls-age/babel-preset",
+  "version": "0.1.0",
+  "description": "ls-age's babel preset",
+  "main": "out",
+  "scripts": {
+    "compile": "babel -d out src",
+    "commitmsg": "commitlint -p @commitlint/config-angular -e $GIT_PARAMS",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasHechenberger/babel-preset.git"
+  },
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LukasHechenberger/babel-preset/issues"
+  },
+  "homepage": "https://github.com/LukasHechenberger/babel-preset#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^5.0.1",
+    "@commitlint/config-angular": "^4.3.0",
+    "ava": "^0.23.0",
+    "babel-cli": "^6.26.0",
+    "conventional-changelog": "^1.1.7",
+    "conventional-github-releaser": "^2.0.0",
+    "eslint": "^4.11.0",
+    "eslint-config-lsage": "^0.3.0",
+    "husky": "^0.14.3",
+    "standard-version": "^4.2.0",
+    "tap-xunit": "^1.7.0"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  },
+  "eslint-config": {
+    "extends": "lsage"
+  },
+  "babel": {
+    "presets": [
+      "./registered"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  }
+}
