@@ -1,12 +1,12 @@
 {
   "name": "@ls-age/babel-preset",
-  "version": "0.1.0",
+  "version": "0.2.0-beta.3",
   "description": "ls-age's babel preset",
   "main": "out",
   "scripts": {
     "compile": "babel -d out src",
     "commitmsg": "commitlint -p @commitlint/config-angular -e $GIT_PARAMS",
-    "lint": "eslint src",
+    "lint": "eslint src test",
     "test": "ava"
   },
   "repository": {
@@ -24,6 +24,8 @@
     "@commitlint/config-angular": "^4.3.0",
     "ava": "^0.23.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-register": "^6.26.0",
     "conventional-changelog-cli": "^1.3.5",
     "conventional-github-releaser": "^2.0.0",
     "eslint": "^4.11.0",
