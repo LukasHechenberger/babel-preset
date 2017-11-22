@@ -53,6 +53,7 @@ jobs:
       - deploy:
           name: Deploy changes
           command: |
+            exit 0;
             if [ "${CIRCLE_BRANCH}" == "master" ] || [ "${CIRCLE_BRANCH}" == "beta" ]; then
               echo "Setting up git user"
               git config --global user.email circleci@circleci && git config --global user.name CircleCI && git remote --v
