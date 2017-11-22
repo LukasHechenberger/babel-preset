@@ -54,7 +54,7 @@
       "tag": true
     },
     "scripts": {
-      "postbump": "npx conventional-changelog -r 0 -i CHANGELOG.md --same-file --preset angular"
+      "postbump": "./node_modules/.bin/conventional-changelog -r 0 -i CHANGELOG.md --same-file --preset angular"
     }
   }
 }
