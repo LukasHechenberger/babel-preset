@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "babel -d out src",
     "commitmsg": "commitlint -p @commitlint/config-angular -e $GIT_PARAMS",
+    "lint": "eslint src",
     "test": "ava"
   },
   "repository": {
