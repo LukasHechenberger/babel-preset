@@ -4,7 +4,7 @@ import lsPreset from '../src';
 
 const asyncFunction = `async function test() {
   return await another();
-}`
+}`;
 
 function transpile(preset) {
   return transform(asyncFunction, { presets: [preset] }).code;
