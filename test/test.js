@@ -23,5 +23,9 @@ test('doesn\'t transforms async functions on browser target', t => {
 });
 
 test('node is default target', t => {
-  t.is(lsPreset(), lsPreset({}, 'node'))
+  t.is(lsPreset(), lsPreset({}, 'node'));
+});
+
+test('options object should work', t => {
+  t.is(lsPreset({}, 'node'), lsPreset({}, { target: 'node' }));
 });
