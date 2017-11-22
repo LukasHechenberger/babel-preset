@@ -4,8 +4,8 @@
 
 ### Features
 
-* Allow options to be an object ([#1](https://github.com/LukasHechenberger/babel-preset/issues/1)) ([8052743](https://github.com/LukasHechenberger/babel-preset/commit/8052743))
-* Initial release ([dfd7dec](https://github.com/LukasHechenberger/babel-preset/commit/dfd7dec))
+* Allow options to be an object ([#1](https://github.com/ls-age/babel-preset/issues/1)) ([8052743](https://github.com/ls-age/babel-preset/commit/8052743))
+* Initial release ([dfd7dec](https://github.com/ls-age/babel-preset/commit/dfd7dec))
 
 
 
