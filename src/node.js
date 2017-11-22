@@ -2,6 +2,6 @@ import envPreset from './lib/envPreset';
 
 export default {
   presets: [
-    envPreset({ node: 8 })
-  ]
-}
+    envPreset({ node: 8 }),
+  ],
+};

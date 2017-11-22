@@ -5,7 +5,7 @@ export default {
     envPreset({
       browsers: [
         '> 1%',
-      ]
+      ],
     }),
-  ]
-}
+  ],
+};
