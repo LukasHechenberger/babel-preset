@@ -57,3 +57,5 @@ equals
 ### `target`
 
 `"node" | "browser"`, defaults to `"node"`
+
+**All other options are passed directly to [babel-preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env)**

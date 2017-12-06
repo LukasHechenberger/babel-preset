@@ -23,9 +23,21 @@ test('doesn\'t transforms async functions on browser target', t => {
 });
 
 test('node is default target', t => {
-  t.is(lsPreset(), lsPreset({}, 'node'));
+  t.deepEqual(lsPreset(), lsPreset({}, 'node'));
 });
 
 test('options object should work', t => {
-  t.is(lsPreset({}, 'node'), lsPreset({}, { target: 'node' }));
+  t.deepEqual(lsPreset({}, 'node'), lsPreset({}, { target: 'node' }));
+});
+
+test('babel-preset-env options are bypassed', t => {
+  const preset = lsPreset({}, { target: 'node', modules: false });
+
+  t.is(preset.presets[0][1].modules, false);
+});
+
+test('targets can be overridden', t => {
+  const preset = lsPreset({}, { targets: { node: 13 } });
+
+  t.is(preset.presets[0][1].targets.node, 13);
 });
