@@ -1,8 +1,8 @@
 import envPreset from 'babel-preset-env';
 
-export default function envPresetWithTargets(targets) {
+export default function envPresetWithTargets(targets, options = {}) {
   return [
     envPreset,
-    { targets },
+    Object.assign({ targets }, options),
   ];
 }
