@@ -1,5 +1,7 @@
 # @ls-age/babel-preset
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ls-age/babel-preset.svg)](https://greenkeeper.io/)
+
 > Babel preset used by ls-age
 
 ## Install
